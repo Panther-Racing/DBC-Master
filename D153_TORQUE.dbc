@@ -210,10 +210,10 @@ BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
 BA_DEF_DEF_  "GenMsgCycleTime" 0;
 BA_DEF_DEF_  "BusType" "CAN";
 BA_DEF_DEF_  "MultiplexExtEnabled" "No";
-BA_ "GenMsgCycleTime" BO_ 1608 10;
-BA_ "GenMsgCycleTime" BO_ 1606 10;
-BA_ "GenMsgCycleTime" BO_ 1604 10;
-BA_ "GenMsgCycleTime" BO_ 1602 10;
-BA_ "GenMsgCycleTime" BO_ 1872 10;
-BA_ "GenMsgCycleTime" BO_ 1600 10;
+BA_ "GenMsgCycleTime" BO_ 1608 100;
+BA_ "GenMsgCycleTime" BO_ 1606 100;
+BA_ "GenMsgCycleTime" BO_ 1604 100;
+BA_ "GenMsgCycleTime" BO_ 1602 100;
+BA_ "GenMsgCycleTime" BO_ 1872 100;
+BA_ "GenMsgCycleTime" BO_ 1600 100;
 
