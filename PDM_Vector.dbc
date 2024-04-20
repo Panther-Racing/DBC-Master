@@ -1,0 +1,79 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU PDM
+
+
+BO_ 281 VCU_pdmVechicleState: 8 VCU
+ SG_ VCU_warningSource m4 : 29|7@0- (1,0) [0|65] ""  PDM
+ SG_ VCU_steeringAngle m4 : 15|16@0- (0.1,-720) [-720|720] "Degrees"  PDM
+ SG_ VCU_readyToDriveSwitch m4 : 35|1@0- (1,0) [0|1] ""  PDM
+ SG_ VCU_readyToDriveState m4 : 31|2@0- (1,-2) [-2|2] ""  PDM
+ SG_ VCU_radCoolantPressOut m3 : 31|16@0- (0.1,0) [0|300] "kPa"  PDM
+ SG_ VCU_radCoolantPressIn m3 : 15|16@0- (0.1,0) [0|300] "kPa"  PDM
+ SG_ VCU_pdmVechicleStateMux M : 7|8@0+ (1,0) [0|255] ""  PDM
+ SG_ VCU_motorCoolantPressOut m1 : 31|16@0- (0.1,0) [0|300] "kPa"  PDM
+ SG_ VCU_motorCoolantPressIn m1 : 15|16@0- (0.1,0) [0|300] ""  PDM
+ SG_ VCU_mcCoolantPressOut m2 : 31|16@0- (0.1,0) [0|300] "kPa"  PDM
+ SG_ VCU_mcCoolantPressIn m2 : 15|16@0- (0.1,0) [0|300] "kPa"  PDM
+ SG_ VCU_driverSwitch2 m4 : 33|1@0- (1,0) [0|1] ""  PDM
+ SG_ VCU_driverSwitch1 m4 : 34|1@0- (1,0) [0|1] ""  PDM
+ SG_ VCU_driverRotarySwitch2 m4 : 44|4@0- (1,-1) [-1|9] ""  PDM
+ SG_ VCU_driverRotarySwitch1 m4 : 32|4@0- (1,-1) [-1|9] ""  PDM
+ SG_ VCU_driverPitSwitch m4 : 36|1@0- (1,0) [0|1] ""  PDM
+ SG_ VCU_brakeState m4 : 38|2@0- (1,-1) [-1|2] ""  PDM
+ SG_ VCU_accuCoolantPressOut m0 : 31|16@0- (0.1,0) [0|300] "kPa"  PDM
+ SG_ VCU_accuCoolantPressIn m0 : 15|16@0- (0.1,0) [0|300] "kPa"  PDM
+
+BO_ 280 VCU_pdmVechicleInfo: 8 VCU
+ SG_ VCU_motorCoolantTempIn m1 : 31|8@0- (1,-250) [-250|250] "Celcius"  PDM
+ SG_ VCU_vehicleSpeed m0 : 31|16@0- (0.01,0) [0|300] "km/h"  PDM
+ SG_ VCU_throttlePedalPosition m0 : 15|16@0- (0.1,0) [0|100] "Percent"  PDM
+ SG_ VCU_radCoolantTempOut m2 : 39|8@0- (1,-250) [-250|250] "Celcius"  PDM
+ SG_ VCU_radCoolantTempIn m2 : 31|8@0- (1,-250) [-250|250] "Celcius"  PDM
+ SG_ VCU_pdmVechicleInfoMux M : 7|8@0+ (1,0) [0|255] ""  PDM
+ SG_ VCU_motorCoolantTempOut m1 : 39|8@0- (1,-250) [-250|250] "Celcius"  PDM
+ SG_ VCU_mcCoolantTempOut m2 : 23|8@0- (1,-250) [-250|250] "Celcius"  PDM
+ SG_ VCU_mcCoolantTempIn m2 : 15|8@0- (1,-250) [-250|250] "Celcius"  PDM
+ SG_ VCU_accuCoolantTempOut m1 : 23|8@0- (1,-250) [-250|250] "Celcius"  PDM
+ SG_ VCU_accuCoolantTempIn m1 : 15|8@0- (1,-250) [-250|250] "Celcius"  PDM
+
+
+
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "BusType" "CAN";
+
