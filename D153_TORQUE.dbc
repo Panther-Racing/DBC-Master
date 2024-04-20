@@ -37,7 +37,7 @@ BU_: BMS MC PDM D153 VCU
 
 
 BO_ 165 INV_motorPositionInfo: 8 BMS
- SG_ INV_motorSpeed : 0|16@1- (0.1,0) [0|6500] ""  D153
+ SG_ INV_motorSpeed : 16|16@1- (1,0) [-32768|32767] ""  D153
 
 BO_ 167 INV_voltageInfo: 8 MC
  SG_ INV_dcBusVoltage : 7|16@0- (1,0) [0|600] ""  D153
