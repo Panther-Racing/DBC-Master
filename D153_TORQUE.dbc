@@ -146,18 +146,19 @@ BO_ 1280 PDM_pdmCurrentTotal: 8 PDM
  SG_ PDM_pdmTotalCurrent : 7|8@0- (1,0) [0|100] "Amps"  D153
 
 BO_ 1606 VCU_vehicleState10Hz: 8 VCU
- SG_ VCU_tsalState : 45|2@0- (1,0) [0|3] ""  D153
- SG_ VCU_throttlePedalPlausCheckState : 55|3@0- (1,-4) [-4|4] ""  D153
- SG_ VCU_throttleMapAimSwitch : 43|4@0- (1,-1) [-1|9] ""  D153
- SG_ VCU_readyToDriveState : 47|2@0- (1,-2) [-2|2] ""  D153
- SG_ VCU_readyToDriveFault : 22|2@0- (1,-3) [-3|3] ""  D153
- SG_ VCU_mcDiagCANTimeout : 51|8@0+ (1,0) [0|255] "ms"  D153
- SG_ VCU_launchAim : 35|4@0- (1,0) [0|9] ""  D153
- SG_ VCU_launchState : 23|1@0- (1,0) [0|1] ""  D153
- SG_ VCU_driverMarkerSwitch : 0|1@0- (1,0) [0|1] ""  D153
- SG_ VCU_dashScreenAimSwitch : 15|8@0+ (1,0) [0|12] ""  D153
- SG_ VCU_accuDiagCANTimeout : 19|16@0- (1,0) [0|10000] "ms"  D153
- SG_ VCU_warningSource : 7|7@0- (1,0) [0|65] ""  D153
+ SG_ VCU_vehicleState10HzMux M : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_tsalState m1 : 17|2@0- (1,0) [0|3] ""  D153
+ SG_ VCU_throttlePedalPlausCheckState m1 : 22|3@0- (1,-4) [-4|4] ""  D153
+ SG_ VCU_throttleMapAimSwitch m0 : 23|4@0- (1,-1) [-1|9] ""  D153
+ SG_ VCU_readyToDriveState m1 : 31|2@0- (1,-2) [-2|2] ""  D153
+ SG_ VCU_readyToDriveFault m1 : 19|2@0- (1,-3) [-3|3] ""  D153
+ SG_ VCU_mcDiagCANTimeout m2 : 31|8@0+ (1,0) [0|255] "ms"  D153
+ SG_ VCU_launchAim m0 : 31|4@0- (1,0) [0|9] ""  D153
+ SG_ VCU_launchState m1 : 29|1@0- (1,0) [0|1] ""  D153
+ SG_ VCU_driverMarkerSwitch m0 : 39|1@0- (1,0) [0|1] ""  D153
+ SG_ VCU_dashScreenAimSwitch m0 : 15|8@0+ (1,0) [0|12] ""  D153
+ SG_ VCU_accuDiagCANTimeout m2 : 15|16@0- (1,0) [0|10000] "ms"  D153
+ SG_ VCU_warningSource m1 : 15|7@0- (1,0) [0|65] ""  D153
 
 BO_ 1604 VCU_vehicleInfo10Hz: 8 VCU
  SG_ VCU_vechicleInfo10HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
