@@ -36,6 +36,15 @@ BS_:
 BU_: BMS MC PDM D153 VCU
 
 
+BO_ 123 VCU_vehicleInfo100Hz: 8 VCU
+ SG_ VCU_vehicleInfo100HzMux M : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_yawRate m1 : 47|16@0- (0.01,-100) [-100|100] "deg/s" Vector__XXX
+ SG_ VCU_rollRate m1 : 31|16@0- (0.01,-100) [-100|100] "deg/s" Vector__XXX
+ SG_ VCU_pitchRate m1 : 15|16@0- (0.01,-100) [-100|100] "deg/s" Vector__XXX
+ SG_ VCU_verticalAcceleration m0 : 47|16@0- (0.001,-5) [-5|5] "G" Vector__XXX
+ SG_ VCU_longitudinalAcceleration m0 : 31|16@0- (0.001,-5) [-5|5] "G" Vector__XXX
+ SG_ VCU_lateralAcceleration m0 : 15|16@0- (0.001,-5) [-5|5] "G" Vector__XXX
+
 BO_ 165 INV_motorPositionInfo: 8 BMS
  SG_ INV_motorSpeed : 16|16@1- (1,0) [-32768|32767] ""  D153
 
@@ -152,15 +161,9 @@ BO_ 1606 VCU_vehicleState10Hz: 8 VCU
 
 BO_ 1604 VCU_vehicleInfo10Hz: 8 VCU
  SG_ VCU_vechicleInfo10HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
- SG_ VCU_yawRate m3 : 47|16@0- (0.01,-100) [-100|100] "deg/s"  D153
- SG_ VCU_verticalAcceleration m2 : 47|16@0- (0.001,-5) [-5|5] "G"  D153
  SG_ VCU_vehicleSpeed m0 : 15|16@0- (0.01,0) [0|300] "km/h"  D153
  SG_ VCU_vcuBatteryVoltage m1 : 31|8@0- (1,0) [0|28] "Volts"  D153
  SG_ VCU_throttlePedalTorqueMap m0 : 31|16@0- (0.1,-500) [-500|500] "Newton-Meter"  D153
- SG_ VCU_rollRate m3 : 31|16@0- (0.01,-100) [-100|100] "deg/s"  D153
- SG_ VCU_pitchRate m3 : 15|16@0- (0.01,-100) [-100|100] "deg/s"  D153
- SG_ VCU_longitudinalAcceleration m2 : 31|16@0- (0.001,-5) [-5|5] "G"  D153
- SG_ VCU_lateralAcceleration m2 : 15|16@0- (0.001,-5) [-5|5] "G"  D153
  SG_ VCU_brakeBiasAim m0 : 47|8@0- (1,0) [0|100] "Percent"  D153
  SG_ VCU_accumEstimatedPower m1 : 15|16@0- (1,0) [0|1200] "Watt"  D153
 
