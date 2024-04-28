@@ -34,6 +34,8 @@ NS_ :
 BS_:
 
 BU_: BMS MC PDM D153 VCU
+VAL_TABLE_ ReadyToDriveStateEnumeration 3 "Ready" 2 "Alarm Sounding" 1 "Not Ready" 0 "Fault" ;
+VAL_TABLE_ ReadyToDriveFaultEnumeration 5 "Throttle Pedal Engaged" 4 "Brakes Disengaged" 3 "Tractive System Inactive" 2 "No Faults" 1 "Brake Sensor Configuration Error" 0 "Unknown Fault" ;
 
 
 BO_ 123 VCU_vehicleInfo100Hz: 8 VCU
@@ -221,4 +223,6 @@ BA_ "GenMsgCycleTime" BO_ 1604 100;
 BA_ "GenMsgCycleTime" BO_ 1602 100;
 BA_ "GenMsgCycleTime" BO_ 1872 100;
 BA_ "GenMsgCycleTime" BO_ 1600 100;
+VAL_ 1606 VCU_readyToDriveState 3 "Ready" 2 "Alarm Sounding" 1 "Not Ready" 0 "Fault" ;
+VAL_ 1606 VCU_readyToDriveFault 5 "Throttle Pedal Engaged" 4 "Brakes Disengaged" 3 "Tractive System Inactive" 2 "No Faults" 1 "Brake Sensor Configuration Error" 0 "Unknown Fault" ;
 
