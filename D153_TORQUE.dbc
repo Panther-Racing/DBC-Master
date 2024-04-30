@@ -41,12 +41,12 @@ BO_ 123 VCU_vehicleInfo100Hz: 8 VCU
  SG_ VCU_yawRate m1 : 47|16@0- (0.01,-100) [-100|100] "deg/s" Vector__XXX
  SG_ VCU_rollRate m1 : 31|16@0- (0.01,-100) [-100|100] "deg/s" Vector__XXX
  SG_ VCU_pitchRate m1 : 15|16@0- (0.01,-100) [-100|100] "deg/s" Vector__XXX
- SG_ VCU_verticalAcceleration m0 : 47|16@0- (0.001,-5) [-5|5] "G" Vector__XXX
- SG_ VCU_longitudinalAcceleration m0 : 31|16@0- (0.001,-5) [-5|5] "G" Vector__XXX
- SG_ VCU_lateralAcceleration m0 : 15|16@0- (0.001,-5) [-5|5] "G" Vector__XXX
+ SG_ VCU_verticalAcceleration m0 : 47|16@0+ (0.001,-5) [-5|5] "G" Vector__XXX
+ SG_ VCU_longitudinalAcceleration m0 : 31|16@0+ (0.001,-5) [-5|5] "G" Vector__XXX
+ SG_ VCU_lateralAcceleration m0 : 15|16@0+ (0.001,-5) [-5|5] "G" Vector__XXX
 
 BO_ 165 INV_motorPositionInfo: 8 BMS
- SG_ INV_motorSpeed : 16|16@1- (1,0) [-32768|32767] ""  D153
+ SG_ INV_motorSpeed : 23|16@0- (1,0) [-32768|32767] ""  D153
 
 BO_ 167 INV_voltageInfo: 8 MC
  SG_ INV_dcBusVoltage : 7|16@0- (1,0) [0|600] ""  D153
@@ -147,35 +147,35 @@ BO_ 1280 PDM_pdmCurrentTotal: 8 PDM
 
 BO_ 1606 VCU_vehicleState10Hz: 8 VCU
  SG_ VCU_vehicleState10HzMux M : 7|8@0+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_tsalState m1 : 17|2@0- (1,0) [0|3] ""  D153
- SG_ VCU_throttlePedalPlausCheckState m1 : 22|3@0- (1,-4) [-4|4] ""  D153
- SG_ VCU_throttleMapAimSwitch m0 : 23|4@0- (1,-1) [-1|9] ""  D153
- SG_ VCU_readyToDriveState m1 : 31|2@0- (1,-2) [-2|2] ""  D153
- SG_ VCU_readyToDriveFault m1 : 19|2@0- (1,-3) [-3|3] ""  D153
- SG_ VCU_mcDiagCANTimeout m2 : 31|8@0+ (1,0) [0|255] "ms"  D153
- SG_ VCU_launchAim m0 : 31|4@0- (1,0) [0|9] ""  D153
- SG_ VCU_launchState m1 : 29|1@0- (1,0) [0|1] ""  D153
+ SG_ VCU_tsalState m1 : 39|8@0+ (1,0) [0|9] ""  D153
+ SG_ VCU_throttlePedalPlausCheckState m1 : 23|8@0+ (1,-3) [-3|9] ""  D153
+ SG_ VCU_throttleMapAimSwitch m0 : 23|8@0+ (1,-1) [-1|9] ""  D153
+ SG_ VCU_readyToDriveState m1 : 55|8@0+ (1,-1) [-1|9] ""  D153
+ SG_ VCU_readyToDriveFault m1 : 31|8@0+ (1,-2) [-2|9] ""  D153
+ SG_ VCU_mcDiagCANTimeout m2 : 39|8@0+ (1,0) [0|255] "ms"  D153
+ SG_ VCU_launchAim m0 : 31|8@0+ (1,-1) [-1|9] ""  D153
+ SG_ VCU_launchState m2 : 15|8@0+ (1,0) [0|9] ""  D153
  SG_ VCU_driverMarkerSwitch m0 : 39|1@0- (1,0) [0|1] ""  D153
- SG_ VCU_dashScreenAimSwitch m0 : 15|8@0+ (1,0) [0|12] ""  D153
- SG_ VCU_accuDiagCANTimeout m2 : 15|16@0- (1,0) [0|10000] "ms"  D153
+ SG_ VCU_dashScreenAimSwitch m0 : 15|8@0+ (1,-1) [-1|9] ""  D153
+ SG_ VCU_accuDiagCANTimeout m2 : 23|16@0- (1,0) [0|10000] "ms"  D153
  SG_ VCU_warningSource m1 : 15|7@0- (1,0) [0|65] ""  D153
 
 BO_ 1604 VCU_vehicleInfo10Hz: 8 VCU
  SG_ VCU_vechicleInfo10HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
  SG_ VCU_vehicleSpeed m0 : 15|16@0- (0.01,0) [0|300] "km/h"  D153
  SG_ VCU_vcuBatteryVoltage m1 : 31|8@0- (1,0) [0|28] "Volts"  D153
- SG_ VCU_throttlePedalTorqueMap m0 : 31|16@0- (0.1,-500) [-500|500] "Newton-Meter"  D153
+ SG_ VCU_throttlePedalTorqueMap m0 : 31|16@0+ (0.1,-500) [-500|500] "Newton-Meter"  D153
  SG_ VCU_brakeBiasAim m0 : 47|8@0- (1,0) [0|100] "Percent"  D153
  SG_ VCU_accumEstimatedPower m1 : 15|16@0- (1,0) [0|1200] "Watt"  D153
 
 BO_ 1602 VCU_componentTemp10Hz: 8 VCU
- SG_ VCU_motorTemp m0 : 15|16@0- (0.1,-3276) [-3276|3276] "Celcius"  D153
- SG_ VCU_mcTempHotSpot m0 : 47|16@0- (1,-3276) [-3276|3276] "Celcius"  D153
- SG_ VCU_mcTempCoolant m0 : 31|16@0- (0.1,-3276) [-3276|3276] "Celcius"  D153
- SG_ VCU_accuLowestTemp m2 : 31|16@0- (0.1,-3276) [-3276|3276] "Celcius"  D153
- SG_ VCU_accuInternalTemp m1 : 15|16@0- (0.1,-3276) [-3276|3276] "Celcius"  D153
- SG_ VCU_accuHighestTemp m2 : 15|16@0- (0.1,-3276) [-3276|3276] "Celcius"  D153
- SG_ VCU_accuAverageTemp m1 : 31|16@0- (0.1,-3276) [-3276|3276] "Celcius"  D153
+ SG_ VCU_motorTemp m0 : 15|16@0+ (0.1,-3276) [-3276|3276] "Celcius"  D153
+ SG_ VCU_mcTempHotSpot m0 : 47|16@0+ (1,-3276) [-3276|3276] "Celcius"  D153
+ SG_ VCU_mcTempCoolant m0 : 31|16@0+ (0.1,-3276) [-3276|3276] "Celcius"  D153
+ SG_ VCU_accuLowestTemp m2 : 31|16@0+ (0.1,-3276) [-3276|3276] "Celcius"  D153
+ SG_ VCU_accuInternalTemp m1 : 15|16@0+ (0.1,-3276) [-3276|3276] "Celcius"  D153
+ SG_ VCU_accuHighestTemp m2 : 15|16@0+ (0.1,-3276) [-3276|3276] "Celcius"  D153
+ SG_ VCU_accuAverageTemp m1 : 31|16@0+ (0.1,-3276) [-3276|3276] "Celcius"  D153
  SG_ VCU_componentTemp10HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
 
 BO_ 1872 VCU_tireInfo10Hz: 8 VCU
@@ -186,22 +186,22 @@ BO_ 1872 VCU_tireInfo10Hz: 8 VCU
  SG_ VCU_avgTireTempFL m0 : 15|16@0- (0.1,0) [0|100] "Celcius"  D153
 
 BO_ 1600 VCU_coolantInfo10Hz: 8 VCU
- SG_ VCU_radCoolantTempOut m3 : 55|8@0- (1,-250) [-250|250] "Celcius"  D153
- SG_ VCU_radCoolantTempIn m3 : 47|8@0- (1,-250) [-250|250] "Celcius"  D153
+ SG_ VCU_radCoolantTempOut m3 : 55|8@0+ (1,-20) [-20|235] "Celcius"  D153
+ SG_ VCU_radCoolantTempIn m3 : 47|8@0+ (1,-20) [-20|235] "Celcius"  D153
  SG_ VCU_radCoolantPressOut m3 : 31|16@0- (0.1,0) [0|300] "kPa"  D153
  SG_ VCU_radCoolantPressIn m3 : 15|16@0- (0.1,0) [0|300] "kPa"  D153
- SG_ VCU_motorCoolantTempOut m1 : 55|8@0- (1,-250) [-250|250] "Celcius"  D153
- SG_ VCU_motorCoolantTempIn m1 : 47|8@0- (1,-250) [-250|250] "Celcius"  D153
+ SG_ VCU_motorCoolantTempOut m1 : 55|8@0+ (1,-20) [-20|235] "Celcius"  D153
+ SG_ VCU_motorCoolantTempIn m1 : 47|8@0+ (1,-20) [-20|235] "Celcius"  D153
  SG_ VCU_motorCoolantPressOut m1 : 31|16@0- (0.1,0) [0|300] "kPa"  D153
  SG_ VCU_motorCoolantPressIn m1 : 15|16@0- (0.1,0) [0|300] "kPa"  D153
  SG_ VCU_motorCoolantFlowRate m4 : 15|16@0- (0.1,0) [0|100] "L/min"  D153
- SG_ VCU_mcCoolantTempOut m2 : 55|8@0- (1,-250) [-250|250] "Celcius"  D153
- SG_ VCU_mcCoolantTempIn m2 : 47|8@0- (1,-250) [-250|250] "Celcius"  D153
+ SG_ VCU_mcCoolantTempOut m2 : 55|8@0+ (1,-20) [-20|235] "Celcius"  D153
+ SG_ VCU_mcCoolantTempIn m2 : 47|8@0+ (1,-20) [-20|235] "Celcius"  D153
  SG_ VCU_mcCoolantPressOut m2 : 31|16@0- (0.1,0) [0|300] "kPa"  D153
  SG_ VCU_mcCoolantPressIn m2 : 15|16@0- (0.1,0) [0|300] "kPa"  D153
  SG_ VCU_mcCoolantFlowRate m4 : 31|16@0- (0.1,0) [0|100] "L/min"  D153
- SG_ VCU_accuCoolantTempOut m0 : 55|8@0- (1,-250) [-250|250] "Celcius "  D153
- SG_ VCU_accuCoolantTempIn m0 : 47|8@0- (1,-250) [-250|250] "Celcius"  D153
+ SG_ VCU_accuCoolantTempOut m0 : 55|8@0+ (1,-20) [-20|235] "Celcius "  D153
+ SG_ VCU_accuCoolantTempIn m0 : 47|8@0+ (1,-20) [-20|235] "Celcius"  D153
  SG_ VCU_accuCoolantPressOut m0 : 31|16@0- (0.1,0) [0|300] "kPa"  D153
  SG_ VCU_coolantInfo10HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
  SG_ VCU_accuCoolantPressIn m0 : 15|16@0- (0.1,0) [0|300] "kPa"  D153
