@@ -190,23 +190,23 @@ BO_ 1872 VCU_tireInfo10Hz: 8 VCU
 BO_ 1600 VCU_coolantInfo10Hz: 8 VCU
  SG_ VCU_radCoolantTempOut m3 : 55|8@0+ (1,-20) [-20|235] "Celcius"  D153
  SG_ VCU_radCoolantTempIn m3 : 47|8@0+ (1,-20) [-20|235] "Celcius"  D153
- SG_ VCU_radCoolantPressOut m3 : 31|16@0- (0.1,0) [0|300] "kPa"  D153
- SG_ VCU_radCoolantPressIn m3 : 15|16@0- (0.1,0) [0|300] "kPa"  D153
+ SG_ VCU_radCoolantPressOut m3 : 31|16@0- (0.1,0) [0|300000] "Pa"  D153
+ SG_ VCU_radCoolantPressIn m3 : 15|16@0- (0.1,0) [0|300000] "Pa"  D153
  SG_ VCU_motorCoolantTempOut m1 : 55|8@0+ (1,-20) [-20|235] "Celcius"  D153
  SG_ VCU_motorCoolantTempIn m1 : 47|8@0+ (1,-20) [-20|235] "Celcius"  D153
- SG_ VCU_motorCoolantPressOut m1 : 31|16@0- (0.1,0) [0|300] "kPa"  D153
- SG_ VCU_motorCoolantPressIn m1 : 15|16@0- (0.1,0) [0|300] "kPa"  D153
+ SG_ VCU_motorCoolantPressOut m1 : 31|16@0- (0.1,0) [0|300000] "Pa"  D153
+ SG_ VCU_motorCoolantPressIn m1 : 15|16@0- (0.1,0) [0|300000] "Pa"  D153
  SG_ VCU_motorCoolantFlowRate m4 : 15|16@0- (0.1,0) [0|100] "L/min"  D153
  SG_ VCU_mcCoolantTempOut m2 : 55|8@0+ (1,-20) [-20|235] "Celcius"  D153
  SG_ VCU_mcCoolantTempIn m2 : 47|8@0+ (1,-20) [-20|235] "Celcius"  D153
- SG_ VCU_mcCoolantPressOut m2 : 31|16@0- (0.1,0) [0|300] "kPa"  D153
- SG_ VCU_mcCoolantPressIn m2 : 15|16@0- (0.1,0) [0|300] "kPa"  D153
+ SG_ VCU_mcCoolantPressOut m2 : 31|16@0- (0.1,0) [0|300000] "Pa"  D153
+ SG_ VCU_mcCoolantPressIn m2 : 15|16@0- (0.1,0) [0|300000] "Pa"  D153
  SG_ VCU_mcCoolantFlowRate m4 : 31|16@0- (0.1,0) [0|100] "L/min"  D153
  SG_ VCU_accuCoolantTempOut m0 : 55|8@0+ (1,-20) [-20|235] "Celcius "  D153
  SG_ VCU_accuCoolantTempIn m0 : 47|8@0+ (1,-20) [-20|235] "Celcius"  D153
- SG_ VCU_accuCoolantPressOut m0 : 31|16@0- (0.1,0) [0|300] "kPa"  D153
+ SG_ VCU_accuCoolantPressOut m0 : 31|16@0- (0.1,0) [0|300000] "Pa"  D153
  SG_ VCU_coolantInfo10HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
- SG_ VCU_accuCoolantPressIn m0 : 15|16@0- (0.1,0) [0|300] "kPa"  D153
+ SG_ VCU_accuCoolantPressIn m0 : 15|16@0- (0.1,0) [0|300000] "Pa"  D153
 
 
 
