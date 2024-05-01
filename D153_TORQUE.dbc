@@ -34,18 +34,27 @@ NS_ :
 BS_:
 
 BU_: BMS MC PDM D153 VCU
+VAL_TABLE_ LimitEnumeration 2 "Limiting" 1 "Not Limited" 0 "CAN Interrputed " ;
+VAL_TABLE_ BMSLimitingTorqueEnumeration 2 "Torque Limited" 1 "Torque Not Limited" 0 "CAN Interrupted" ;
+VAL_TABLE_ WarningEnumeration 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_TABLE_ WarningSourceEnumeration 64 "Motor Torque Limit Warning" 63 "Motor Speed Limit Warning" 62 "AVIL Warning" 61 "Accu IMD Light Warning" 60 "Accu CAN Bus Timeout Warning" 59 "MC CAN Bus Timeout Warning" 58 "GPS Diagnostic" 57 "RS232 Diagnostic" 56 "CAN Bus 3 Diagnostic" 55 "CAN Bus 2 Diagnostic" 54 "CAN Bus 1 Diagnostic" 53 "Break Pressure Sensor Diagnostic" 52 "Throttle Pedal Sensor Diagnostic" 51 "Rad Coolant Flow Rate Diag" 50 "Accu Coolant Flow Rate Diag" 49 "MC Coolant Flow Rate Diag" 48 "Motor Coolant Flow Rate Diag" 47 "Rad Coolant Pressure Out Diag" 46 "Rad Coolant Pressure In Diag" 45 "Accu Coolant Pressure Out Diag" 44 "Accu Coolant Pressure In Diag" 43 "MC Coolant Pressure Out Diag" 42 "MC Coolant Pressure In Diag" 41 "Motor Coolant Pressure Out Diag" 40 "Motor Coolant Pressure In Diag" 39 "Radiator Coolant Temp In Diag" 38 "Radiator Coolant Temp In Diag" 37 "Accumulator Coolant Temp In Diag" 36 "Accumulator Coolant Temp In Diag" 35 "MC Coolant Temp Out Diag" 34 "MC Coolant Temp In Diag" 33 "Motor Coolant Temp Out Diag" 32 "Motor Coolant Temp In Diag" 31 "Accumulator Termperature Warning" 30 "Pedal Plausibility Fault Warning" 29 "Battery Undervoltage Warning" 28 "TS Over Power Warning" 27 "Accumulator Undervoltage Warning" 26 "Accumulator Overvoltage Warning" 25 "Accumulator Overcurrent Warning" 24 "MC Overcurrent Warning" 23 "Motor Overvoltage Warning" 22 "Motor Overcurrent Warning" 21 "Motor Overspeed Warning" 20 "Rad Coolant Flow Rate Warning" 19 "Accu Coolant Flow Rate Warning" 18 "MC Coolant Flow Rate Warning" 17 "Motor Coolant Flow Rate Warning " 16 "Rad Coolant Press Out Warning" 15 "Rad Coolant Press In Warning" 14 "Accu Coolant Press Out Warning" 13 "Accu Coolant Press In Warning" 12 "MC Coolant Press Out Warning" 11 "MC Coolant Press In Warning " 10 "Motor Coolant Press Out Warning" 9 "Motor Coolant Press In Warning" 8 "Rad Coolant Temp Out Warning" 7 "Rad Coolant Temp In Warning" 6 "Accu Coolant Temp Out Warning" 5 "Accu Coolant Temp In Warning" 4 "MC Coolant Temp Out Warning" 3 "MC Coolant Temp In Warning" 2 "Motor Coolant Temp Out Warning" 1 "Motor Coolant Temp In Warning " 0 "None" ;
+VAL_TABLE_ ModeEnumeration 1 "Enabled" 0 "Disabled" ;
+VAL_TABLE_ TSALEnumeration 3 "Both Lights Off " 2 "TSAL Status Unknown" 1 "Green Light On" 0 "Red Light Blinking " ;
+VAL_TABLE_ PedalPlausCheckStateEnumeration 7 "Tripped only on Throttle" 6 "Tripped" 5 "Plausibility Detected" 4 "Normal" 3 "Not In Use" 2 "Brake Pressure Sensor Fault" 1 "No Brake Pressure Sensor" 0 "Unknown" ;
+VAL_TABLE_ UniversalSwitchStateEnumeration 1 "On" 0 "Off" ;
+VAL_TABLE_ NinePosSwitchStateEnumeration 10 "Nine" 9 "Eight" 8 "Seven" 7 "Six" 6 "Five" 5 "Four" 4 "Three" 3 "Two" 2 "One" 1 "Zero" 0 "Default" ;
 VAL_TABLE_ ReadyToDriveStateEnumeration 3 "Ready" 2 "Alarm Sounding" 1 "Not Ready" 0 "Fault" ;
 VAL_TABLE_ ReadyToDriveFaultEnumeration 5 "Throttle Pedal Engaged" 4 "Brakes Disengaged" 3 "Tractive System Inactive" 2 "No Faults" 1 "Brake Sensor Configuration Error" 0 "Unknown Fault" ;
 
 
 BO_ 123 VCU_vehicleInfo100Hz: 8 VCU
- SG_ VCU_vehicleInfo100HzMux M : 7|8@0+ (1,0) [0|255] "" Vector__XXX
- SG_ VCU_yawRate m1 : 47|16@0- (0.01,-100) [-100|100] "deg/s" Vector__XXX
- SG_ VCU_rollRate m1 : 31|16@0- (0.01,-100) [-100|100] "deg/s" Vector__XXX
- SG_ VCU_pitchRate m1 : 15|16@0- (0.01,-100) [-100|100] "deg/s" Vector__XXX
- SG_ VCU_verticalAcceleration m0 : 47|16@0+ (0.001,-50) [-50|50] "m/s2" Vector__XXX
- SG_ VCU_longitudinalAcceleration m0 : 31|16@0+ (0.001,-50) [-50|50] "m/s2" Vector__XXX
- SG_ VCU_lateralAcceleration m0 : 15|16@0+ (0.001,-50) [-50|50] "m/s2" Vector__XXX
+ SG_ VCU_vehicleInfo100HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
+ SG_ VCU_yawRate m1 : 47|16@0- (0.01,-100) [-100|100] "deg/s"  D153
+ SG_ VCU_rollRate m1 : 31|16@0- (0.01,-100) [-100|100] "deg/s"  D153
+ SG_ VCU_pitchRate m1 : 15|16@0- (0.01,-100) [-100|100] "deg/s"  D153
+ SG_ VCU_verticalAcceleration m0 : 47|16@0+ (0.001,-50) [-50|50] "m/s2"  D153
+ SG_ VCU_longitudinalAcceleration m0 : 31|16@0+ (0.001,-50) [-50|50] "m/s2"  D153
+ SG_ VCU_lateralAcceleration m0 : 15|16@0+ (0.001,-50) [-50|50] "m/s2"  D153
 
 BO_ 165 INV_motorPositionInfo: 8 BMS
  SG_ INV_motorSpeed : 23|16@0- (1,0) [0|39000] "deg/s"  D153
@@ -148,7 +157,7 @@ BO_ 1280 PDM_pdmCurrentTotal: 8 PDM
  SG_ PDM_pdmTotalCurrent : 7|8@0- (1,0) [0|100] "Amps"  D153
 
 BO_ 1606 VCU_vehicleState10Hz: 8 VCU
- SG_ VCU_vehicleState10HzMux M : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_vehicleState10HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
  SG_ VCU_tsalState m1 : 39|8@0+ (1,0) [0|9] ""  D153
  SG_ VCU_throttlePedalPlausCheckState m1 : 23|8@0+ (1,-3) [-3|9] ""  D153
  SG_ VCU_throttleMapAimSwitch m0 : 23|8@0+ (1,-1) [-1|9] ""  D153
@@ -223,6 +232,82 @@ BA_ "GenMsgCycleTime" BO_ 1604 100;
 BA_ "GenMsgCycleTime" BO_ 1602 100;
 BA_ "GenMsgCycleTime" BO_ 1872 100;
 BA_ "GenMsgCycleTime" BO_ 1600 100;
+VAL_ 170 INV_limitCoolantDerating 2 "Limiting" 1 "Not Limited" 0 "CAN Interrputed " ;
+VAL_ 170 INV_bmsTorqueLimiting 2 "Torque Limited" 1 "Torque Not Limited" 0 "CAN Interrupted" ;
+VAL_ 1608 VCU_mcCoolantFlowRateDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_gpsDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_CANBus3Diagnostic 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_CANBus2Diagnostic 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_CANBus1Diagnostic 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_brakePressureSensorDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_warning10HzMux 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_tsOverPowerWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_throttlePedalSensorDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_rs232Diag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_radiatorCoolantFlowRateDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_radCoolantTempOutWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_radCoolantTempOutDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_radCoolantTempInWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_radCoolantTempInDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_radCoolantPressOutWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_radCoolantPressOutDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_radCoolantPressInWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_radCoolantPressInDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_radCoolantFlowRateWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_pedalPlausFaultWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorTorqueLimitWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorSpeedLimitWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorOverVoltWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorOverSpeedWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorOverCurrentWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorCoolantTempOutWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorCoolantTempOutDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorCoolantTempInWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorCoolantTempInDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorCoolantPressOutWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorCoolantPressOutDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorCoolantPressInWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorCoolantPressInDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorCoolantFlowRateWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_motorCoolantFlowRateDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_mcOverVoltWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_mcOverCurrentWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_mcCoolantTempOutWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_mcCoolantTempOutDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_mcCoolantTempInWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_mcCoolantTempInDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_mcCoolantPressOutWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_mcCoolantPressOutDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_mcCoolantPressInWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_mcCoolantPressInDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_mcCoolantFlowRateWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_mcCANTimeoutWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_batteryUnderVoltWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuUnderVoltWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuOverVoltWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuOverCurrentWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accumulatorTempWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuIMDLightWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuHVILWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuCoolantTempOutWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuCoolantTempOutDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuCoolantTempInWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuCoolantTempInDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuCoolantPressOutWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuCoolantPressOutDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuCoolantPressInWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuCoolantPressInDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuCoolantFlowRateWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuCoolantFlowRateDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1608 VCU_accuCANTimeoutWarning 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
+VAL_ 1606 VCU_tsalState 3 "Both Lights Off " 2 "TSAL Status Unknown" 1 "Green Light On" 0 "Red Light Blinking " ;
+VAL_ 1606 VCU_throttlePedalPlausCheckState 7 "Tripped only on Throttle" 6 "Tripped" 5 "Plausibility Detected" 4 "Normal" 3 "Not In Use" 2 "Brake Pressure Sensor Fault" 1 "No Brake Pressure Sensor" 0 "Unknown" ;
+VAL_ 1606 VCU_throttleMapAimSwitch 10 "Nine" 9 "Eight" 8 "Seven" 7 "Six" 6 "Five" 5 "Four" 4 "Three" 3 "Two" 2 "One" 1 "Zero" 0 "Default" ;
 VAL_ 1606 VCU_readyToDriveState 3 "Ready" 2 "Alarm Sounding" 1 "Not Ready" 0 "Fault" ;
 VAL_ 1606 VCU_readyToDriveFault 5 "Throttle Pedal Engaged" 4 "Brakes Disengaged" 3 "Tractive System Inactive" 2 "No Faults" 1 "Brake Sensor Configuration Error" 0 "Unknown Fault" ;
+VAL_ 1606 VCU_launchAim 10 "Nine" 9 "Eight" 8 "Seven" 7 "Six" 6 "Five" 5 "Four" 4 "Three" 3 "Two" 2 "One" 1 "Zero" 0 "Default" ;
+VAL_ 1606 VCU_launchState 1 "Enabled" 0 "Disabled" ;
+VAL_ 1606 VCU_driverMarkerSwitch 1 "On" 0 "Off" ;
+VAL_ 1606 VCU_dashScreenAimSwitch 10 "Nine" 9 "Eight" 8 "Seven" 7 "Six" 6 "Five" 5 "Four" 4 "Three" 3 "Two" 2 "One" 1 "Zero" 0 "Default" ;
+VAL_ 1606 VCU_warningSource 64 "Motor Torque Limit Warning" 63 "Motor Speed Limit Warning" 62 "AVIL Warning" 61 "Accu IMD Light Warning" 60 "Accu CAN Bus Timeout Warning" 59 "MC CAN Bus Timeout Warning" 58 "GPS Diagnostic" 57 "RS232 Diagnostic" 56 "CAN Bus 3 Diagnostic" 55 "CAN Bus 2 Diagnostic" 54 "CAN Bus 1 Diagnostic" 53 "Break Pressure Sensor Diagnostic" 52 "Throttle Pedal Sensor Diagnostic" 51 "Rad Coolant Flow Rate Diag" 50 "Accu Coolant Flow Rate Diag" 49 "MC Coolant Flow Rate Diag" 48 "Motor Coolant Flow Rate Diag" 47 "Rad Coolant Pressure Out Diag" 46 "Rad Coolant Pressure In Diag" 45 "Accu Coolant Pressure Out Diag" 44 "Accu Coolant Pressure In Diag" 43 "MC Coolant Pressure Out Diag" 42 "MC Coolant Pressure In Diag" 41 "Motor Coolant Pressure Out Diag" 40 "Motor Coolant Pressure In Diag" 39 "Radiator Coolant Temp In Diag" 38 "Radiator Coolant Temp In Diag" 37 "Accumulator Coolant Temp In Diag" 36 "Accumulator Coolant Temp In Diag" 35 "MC Coolant Temp Out Diag" 34 "MC Coolant Temp In Diag" 33 "Motor Coolant Temp Out Diag" 32 "Motor Coolant Temp In Diag" 31 "Accumulator Termperature Warning" 30 "Pedal Plausibility Fault Warning" 29 "Battery Undervoltage Warning" 28 "TS Over Power Warning" 27 "Accumulator Undervoltage Warning" 26 "Accumulator Overvoltage Warning" 25 "Accumulator Overcurrent Warning" 24 "MC Overcurrent Warning" 23 "Motor Overvoltage Warning" 22 "Motor Overcurrent Warning" 21 "Motor Overspeed Warning" 20 "Rad Coolant Flow Rate Warning" 19 "Accu Coolant Flow Rate Warning" 18 "MC Coolant Flow Rate Warning" 17 "Motor Coolant Flow Rate Warning " 16 "Rad Coolant Press Out Warning" 15 "Rad Coolant Press In Warning" 14 "Accu Coolant Press Out Warning" 13 "Accu Coolant Press In Warning" 12 "MC Coolant Press Out Warning" 11 "MC Coolant Press In Warning " 10 "Motor Coolant Press Out Warning" 9 "Motor Coolant Press In Warning" 8 "Rad Coolant Temp Out Warning" 7 "Rad Coolant Temp In Warning" 6 "Accu Coolant Temp Out Warning" 5 "Accu Coolant Temp In Warning" 4 "MC Coolant Temp Out Warning" 3 "MC Coolant Temp In Warning" 2 "Motor Coolant Temp Out Warning" 1 "Motor Coolant Temp In Warning " 0 "None" ;
 
