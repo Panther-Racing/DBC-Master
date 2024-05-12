@@ -47,22 +47,14 @@ VAL_TABLE_ ReadyToDriveStateEnumeration 3 "Ready" 2 "Alarm Sounding" 1 "Not Read
 VAL_TABLE_ ReadyToDriveFaultEnumeration 5 "Throttle Pedal Engaged" 4 "Brakes Disengaged" 3 "Tractive System Inactive" 2 "No Faults" 1 "Brake Sensor Configuration Error" 0 "Unknown Fault" ;
 
 
-BO_ 54 BMS_MSGID_0X36_CELLBCAST: 8 BMS
-
 BO_ 123 VCU_vehicleInfo100Hz: 8 VCU
  SG_ VCU_vehicleInfo100HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
  SG_ VCU_yawRate m1 : 47|16@0- (0.01,-100) [-100|100] "deg/s"  D153
  SG_ VCU_rollRate m1 : 31|16@0- (0.01,-100) [-100|100] "deg/s"  D153
  SG_ VCU_pitchRate m1 : 15|16@0- (0.01,-100) [-100|100] "deg/s"  D153
- SG_ VCU_verticalAcceleration m0 : 47|16@0+ (0.001,-50) [-50|50] "m/s2"  D153
- SG_ VCU_longitudinalAcceleration m0 : 31|16@0+ (0.001,-50) [-50|50] "m/s2"  D153
- SG_ VCU_lateralAcceleration m0 : 15|16@0+ (0.001,-50) [-50|50] "m/s2"  D153
-
-BO_ 165 INV_motorPositionInfo: 8 BMS
-
-BO_ 167 INV_voltageInfo: 8 MC
-
-BO_ 170 INV_internalStates: 8 MC
+ SG_ VCU_verticalAcceleration m0 : 47|16@0+ (0.001,-50) [-50|50] "G"  D153
+ SG_ VCU_longitudinalAcceleration m0 : 31|16@0+ (0.001,-50) [-50|50] "G"  D153
+ SG_ VCU_lateralAcceleration m0 : 15|16@0+ (0.001,-50) [-50|50] "G"  D153
 
 BO_ 1608 VCU_warning10Hz: 8 VCU
  SG_ VCU_mcCoolantFlowRateDiag m1 : 53|2@0- (1,0) [0|1] ""  D153
