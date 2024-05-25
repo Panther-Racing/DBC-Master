@@ -145,12 +145,12 @@ BO_ 1606 VCU_vehicleState10Hz: 8 VCU
 BO_ 1604 VCU_vehicleInfo10Hz: 8 VCU
  SG_ VCU_vechicleInfo10HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
  SG_ VCU_vehicleSpeed m0 : 15|16@0- (0.01,0) [0|100] "m/s"  D153
- SG_ VCU_vcuBatteryVoltage m1 : 31|8@0- (1,0) [0|28] "Volts"  D153
+ SG_ VCU_vcuBatteryVoltage m1 : 31|8@0- (0.1,0) [0|28] "Volts"  D153
  SG_ VCU_throttlePedalTorqueMap m0 : 31|16@0+ (0.1,-500) [-500|500] "Newton-Meter"  D153
  SG_ VCU_brakeBiasAim m0 : 47|8@0- (1,0) [0|1] "Ratio"  D153
  SG_ VCU_accumEstimatedPower m1 : 15|16@0- (1,0) [0|1200] "Watt"  D153
 
-BO_ 1602 VCU_componentTemp10Hz: 8 VCU
+BO_ 1346 VCU_componentTemp10Hz: 8 VCU
  SG_ VCU_motorTemp m0 : 15|16@0+ (0.1,-3276) [-3276|3276] "C"  D153
  SG_ VCU_mcTempHotSpot m0 : 47|16@0+ (1,-3276) [-3276|3276] "C"  D153
  SG_ VCU_mcTempCoolant m0 : 31|16@0+ (0.1,-3276) [-3276|3276] "C"  D153
@@ -167,7 +167,7 @@ BO_ 1872 VCU_tireInfo10Hz: 8 VCU
  SG_ VCU_avgTireTempFR m0 : 31|16@0- (0.1,0) [0|100] "C"  D153
  SG_ VCU_avgTireTempFL m0 : 15|16@0- (0.1,0) [0|100] "C"  D153
 
-BO_ 1600 VCU_coolantInfo10Hz: 8 VCU
+BO_ 1348 VCU_coolantInfo10Hz: 8 VCU
  SG_ VCU_radCoolantTempOut m3 : 55|8@0+ (1,-20) [-20|235] "C"  D153
  SG_ VCU_radCoolantTempIn m3 : 47|8@0+ (1,-20) [-20|235] "C"  D153
  SG_ VCU_radCoolantPressOut m3 : 31|16@0- (0.1,0) [0|300000] "Pa"  D153
@@ -200,9 +200,9 @@ BA_ "GenMsgCycleTime" BO_ 123 10;
 BA_ "GenMsgCycleTime" BO_ 1608 100;
 BA_ "GenMsgCycleTime" BO_ 1606 100;
 BA_ "GenMsgCycleTime" BO_ 1604 100;
-BA_ "GenMsgCycleTime" BO_ 1602 100;
+BA_ "GenMsgCycleTime" BO_ 1346 100;
 BA_ "GenMsgCycleTime" BO_ 1872 100;
-BA_ "GenMsgCycleTime" BO_ 1600 100;
+BA_ "GenMsgCycleTime" BO_ 1348 20;
 VAL_ 1608 VCU_mcCoolantFlowRateDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
 VAL_ 1608 VCU_gpsDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
 VAL_ 1608 VCU_CANBus3Diagnostic 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
