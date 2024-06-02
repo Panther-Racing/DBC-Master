@@ -60,6 +60,8 @@ BO_ 123 VCU_vehicleInfo100Hz: 8 VCU
  SG_ VCU_lateralAcceleration m0 : 15|16@0+ (0.001,-50) [-50|50] "G"  D153
 
 BO_ 1608 VCU_warning10Hz: 8 VCU
+ SG_ VCU_packVoltageWarning m3 : 14|1@0- (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_highCellWarning m3 : 15|1@0- (1,0) [0|1] "" Vector__XXX
  SG_ VCU_mcCoolantFlowRateDiag m1 : 53|2@0- (1,0) [0|1] ""  D153
  SG_ VCU_gpsDiag m2 : 11|2@0- (1,0) [0|1] ""  D153
  SG_ VCU_CANBus3Diagnostic m2 : 15|2@0- (1,0) [0|1] ""  D153
@@ -154,7 +156,6 @@ BO_ 1604 VCU_vehicleInfo10Hz: 8 VCU
  SG_ VCU_accumEstimatedPower m1 : 15|16@0- (1,0) [0|1200] "Watt"  D153
 
 BO_ 1346 VCU_componentTemp10Hz: 8 VCU
- SG_ VCU_highCellWarning m2 : 46|1@0- (1,0) [0|1] ""  D153
  SG_ VCU_motorTemp m0 : 15|16@0+ (0.1,-3276) [-3276|3276] "C"  D153
  SG_ VCU_mcTempHotSpot m0 : 47|16@0+ (1,-3276) [-3276|3276] "C"  D153
  SG_ VCU_mcTempCoolant m0 : 31|16@0+ (0.1,-3276) [-3276|3276] "C"  D153
