@@ -57,7 +57,7 @@ BO_ 123 VCU_vehicleInfo100Hz: 8 VCU
  SG_ VCU_lateralAcceleration m0 : 15|16@0+ (0.001,-50) [-50|50] "G"  D153
 
 BO_ 1608 VCU_warning10Hz: 8 VCU
- SG_ VCU_vcuBatteryWarning m3 : 13|2@0+ (1,0) [-2|1] "" Vector__XXX
+ SG_ VCU_vcuBatteryWarning m3 : 13|2@0+ (1,0) [0|3] "" Vector__XXX
  SG_ VCU_packVoltageWarning m3 : 14|1@0- (1,0) [0|1] "" Vector__XXX
  SG_ VCU_highCellWarning m3 : 15|1@0- (1,0) [0|1] "" Vector__XXX
  SG_ VCU_mcCoolantFlowRateDiag m1 : 53|2@0- (1,0) [0|1] ""  D153
