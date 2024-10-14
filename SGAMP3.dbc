@@ -38,7 +38,7 @@ BU_: VCU
 
 BO_ 1010 SGAMP3_data1000Hz: 3 Vector__XXX
  SG_ SGAMP3_outputVoltage : 7|16@0- (7.629394531E-005,2.5) [-32768|32767] "V"  VCU
- SG_ SGAMP3_ambientTemp : 23|8@0- (1,0) [0|0] ""  VCU
+ SG_ SGAMP3_ambientTemp : 23|8@0- (1,0) [0|0] "C"  VCU
 
 
 
