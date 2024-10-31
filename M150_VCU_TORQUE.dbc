@@ -34,6 +34,7 @@ NS_ :
 BS_:
 
 BU_: BMS MC PDM D153 VCU
+VAL_TABLE_ LinearDiagnosticEnumeration 3 "High Warning" 2 "Low Warning" 1 "OK" 0 "Not In Use" -1 "High Fault" -2 "Low Fault" -3 "Communications Timeout" ;
 VAL_TABLE_ LimitEnumeration 2 "Limiting" 1 "Not Limited" 0 "CAN Interrputed " ;
 VAL_TABLE_ BMSLimitingTorqueEnumeration 2 "Torque Limited" 1 "Torque Not Limited" 0 "CAN Interrupted" ;
 VAL_TABLE_ WarningEnumeration 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
@@ -57,7 +58,7 @@ BO_ 123 VCU_vehicleInfo100Hz: 8 VCU
  SG_ VCU_lateralAcceleration m0 : 15|16@0+ (0.001,-50) [-50|50] "G"  D153
 
 BO_ 1608 VCU_warning10Hz: 8 VCU
- SG_ VCU_vcuBatteryWarning m3 : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_vcuBatteryWarning m3 : 13|2@0- (1,0) [0|3] "" Vector__XXX
  SG_ VCU_packVoltageWarning m3 : 14|1@0- (1,0) [0|1] "" Vector__XXX
  SG_ VCU_highCellWarning m3 : 15|1@0- (1,0) [0|1] "" Vector__XXX
  SG_ VCU_mcCoolantFlowRateDiag m1 : 53|2@0- (1,0) [0|1] ""  D153
@@ -206,6 +207,7 @@ BA_ "GenMsgCycleTime" BO_ 1604 100;
 BA_ "GenMsgCycleTime" BO_ 1346 100;
 BA_ "GenMsgCycleTime" BO_ 1872 100;
 BA_ "GenMsgCycleTime" BO_ 1348 20;
+VAL_ 1608 VCU_vcuBatteryWarning 3 "High Warning" 2 "Low Warning" 1 "OK" 0 "Not In Use" -1 "High Fault" -2 "Low Fault" -3 "Communications Timeout" ;
 VAL_ 1608 VCU_mcCoolantFlowRateDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
 VAL_ 1608 VCU_gpsDiag 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
 VAL_ 1608 VCU_CANBus3Diagnostic 3 "Disabled" 2 "OK" 1 "Active" 0 "Limit" ;
