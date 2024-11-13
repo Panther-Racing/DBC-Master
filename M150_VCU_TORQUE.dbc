@@ -47,10 +47,9 @@ VAL_TABLE_ ReadyToDriveStateEnumeration 3 "Ready" 2 "Alarm Sounding" 1 "Not Read
 VAL_TABLE_ ReadyToDriveFaultEnumeration 5 "Throttle Pedal Engaged" 4 "Brakes Disengaged" 3 "Tractive System Inactive" 2 "No Faults" 1 "Brake Sensor Configuration Error" 0 "Unknown Fault" ;
 
 
-BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
- SG_ VCU_torqueMapMaximum : 0|8@1- (1,0) [0|0] "" Vector__XXX
-
-BO_ 1610 VCU_vehicleInfo1Hz: 8 Vector__XXX
+BO_ 1610 VCU_vehicleInfo1Hz: 2 Vector__XXX
+ SG_ VCU_vehicleInfo1HzMux M : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VCU_torqueMapMaximum m0 : 8|8@1- (1,0) [0|0] "" Vector__XXX
 
 BO_ 123 VCU_vehicleInfo100Hz: 8 VCU
  SG_ VCU_vehicleInfo100HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
@@ -198,7 +197,6 @@ BO_ 1348 VCU_coolantInfo10Hz: 8 VCU
 
 
 
-CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 BA_DEF_ BO_  "GenMsgCycleTime" INT 0 100000;
 BA_DEF_  "BusType" STRING ;
 BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
