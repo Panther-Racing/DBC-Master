@@ -1,0 +1,3 @@
+Message ID,Message Name,Message Length,Signal Name,Is Multiplexor,Multiplex ID,Multiplexer Signal,Start Bit,Length,Byte Order,Signed,Scale,Offset,Minimum,Maximum,Unit,Component,Firmware Variable Name,Comment
+0x3F0,SGAMP1_data1000Hz,8,SGAMP1_outputVoltage ,FALSE,0,,0,16,Big,TRUE,7.6294E-05,2.5,-32768,32767,V,Strain Gauge Amplifier 1,,
+0x3F0,SGAMP1_data1000Hz,8,SGAMP1_ambientTemp,FALSE,0,,16,8,Big,TRUE,1,0,0,255,C,Strain Gauge Amplifier 1,,
