@@ -37,14 +37,11 @@ BU_: PRBMS
 
 
 BO_ 256 BMS_accuInfo100Hz: 8 PRBMS
- SG_ BMS_voltageLowByte : 56|8@1+ (0.1,0) [0|25.5] "V" Vector__XXX
- SG_ BMS_voltageHighByte : 48|8@1+ (0.1,0) [0|25.5] "V" Vector__XXX
- SG_ BMS_lowCellByte : 40|8@1+ (1,0) [0|255] "C" Vector__XXX
- SG_ BMS_highCellByte : 32|8@1+ (1,0) [0|255] "C" Vector__XXX
- SG_ BMS_currentLowByte : 24|8@1+ (0.1,0) [0|25.5] "A" Vector__XXX
- SG_ BMS_currentHighByte : 16|8@1+ (0.1,0) [0|25.5] "A" Vector__XXX
- SG_ BMS_avgCellLowByte : 8|8@1+ (0.001,0) [0|0.255] "V" Vector__XXX
- SG_ BMS_avgCellHighByte : 0|8@1+ (0.001,0) [0|0.255] "V" Vector__XXX
+ SG_ BMS_packVoltage : 0|16@1+ (0.1,0) [0|6553.5] "V" Vector__XXX
+ SG_ BMS_packCurrent : 16|16@1+ (0.1,0) [0|6553.5] "A" Vector__XXX
+ SG_ BMS_lowCellTemp : 40|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ BMS_highCellTemp : 32|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ BMS_avgCellVoltage : 48|16@1+ (0.001,0) [0|0] "V" Vector__XXX
 
 
 
