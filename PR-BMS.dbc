@@ -36,12 +36,27 @@ BS_:
 BU_: PRBMS
 
 
+BO_ 257 BMS_faultStatuses100Hz: 2 Vector__XXX
+ SG_ BMS_chargerFault : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_CANTransmitFault : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_CANInitFault : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_prechargeTimeout : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_prechargeTempFault : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_internalCellCommsFault : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_BMSUnderTemp : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_BMSOverTemp : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_cellUnderTemp : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_cellOverTemp : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_cellMismatch : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_cellUnderVoltage : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_cellOverVoltage : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
 BO_ 256 BMS_accuInfo100Hz: 8 PRBMS
- SG_ BMS_packVoltage : 0|16@1+ (0.1,0) [0|6553.5] "V" Vector__XXX
- SG_ BMS_packCurrent : 16|16@1+ (0.1,0) [0|6553.5] "A" Vector__XXX
- SG_ BMS_lowCellTemp : 40|8@1+ (1,0) [0|255] "C" Vector__XXX
- SG_ BMS_highCellTemp : 32|8@1+ (1,0) [0|255] "C" Vector__XXX
- SG_ BMS_avgCellVoltage : 48|16@1+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ BMS_packVoltage : 7|16@0+ (0.1,0) [0|6553.5] "V" Vector__XXX
+ SG_ BMS_packCurrent : 23|16@0+ (0.1,0) [0|6553.5] "A" Vector__XXX
+ SG_ BMS_lowCellTemp : 47|8@0+ (1,0) [0|255] "C" Vector__XXX
+ SG_ BMS_highCellTemp : 39|8@0+ (1,0) [0|255] "C" Vector__XXX
+ SG_ BMS_avgCellVoltage : 55|16@0+ (0.001,0) [0|0] "V" Vector__XXX
 
 
 
