@@ -36,35 +36,6 @@ BS_:
 BU_: PRBMS
 
 
-BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
- SG_ New_Signal_45 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_44 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_43 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_42 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_41 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_40 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_39 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_38 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_37 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_36 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_35 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_34 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_33 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_32 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_31 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_30 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_29 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_28 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_27 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_26 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_25 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_24 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_23 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_22 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_21 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_20 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_19 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
-
 BO_ 257 BMS_faultStatuses100Hz: 2 PRBMS
  SG_ BMS_chargerFault : 12|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ BMS_CANTransmitFault : 11|1@0+ (1,0) [0|0] "" Vector__XXX
@@ -89,7 +60,6 @@ BO_ 256 BMS_accuInfo100Hz: 8 PRBMS
 
 
 
-CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "MultiplexExtEnabled" "No";
