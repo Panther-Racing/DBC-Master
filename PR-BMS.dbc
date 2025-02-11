@@ -36,20 +36,62 @@ BS_:
 BU_: PRBMS
 
 
+BO_ 13 New_Message_16: 8 Vector__XXX
+ SG_ New_Signal_32 : 12|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 12 New_Message_15: 8 Vector__XXX
+ SG_ New_Signal_31 : 11|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 11 New_Message_14: 8 Vector__XXX
+ SG_ New_Signal_30 : 10|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 10 New_Message_13: 8 Vector__XXX
+ SG_ New_Signal_29 : 9|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 9 New_Message_12: 8 Vector__XXX
+ SG_ New_Signal_28 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 8 New_Message_11: 8 Vector__XXX
+ SG_ New_Signal_27 : 7|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 7 New_Message_10: 8 Vector__XXX
+ SG_ New_Signal_26 : 6|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 6 New_Message_9: 8 Vector__XXX
+ SG_ New_Signal_25 : 5|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 5 New_Message_8: 8 Vector__XXX
+ SG_ New_Signal_24 : 4|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 4 New_Message_7: 8 Vector__XXX
+ SG_ New_Signal_23 : 3|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 3 New_Message_6: 8 Vector__XXX
+ SG_ New_Signal_22 : 2|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2 New_Message_5: 8 Vector__XXX
+ SG_ New_Signal_21 : 1|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1 New_Message_4: 8 Vector__XXX
+ SG_ New_Signal_20 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 0 New_Message_3: 8 Vector__XXX
+ SG_ New_Signal_19 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
 BO_ 257 BMS_faultStatuses100Hz: 2 Vector__XXX
- SG_ BMS_chargerFault : 12|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ BMS_CANTransmitFault : 11|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ BMS_CANInitFault : 10|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ BMS_prechargeTimeout : 9|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ BMS_prechargeTempFault : 8|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ BMS_internalCellCommsFault : 7|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ BMS_BMSUnderTemp : 6|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ BMS_BMSOverTemp : 5|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ BMS_cellUnderTemp : 4|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ BMS_cellOverTemp : 3|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ BMS_cellMismatch : 2|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ BMS_cellUnderVoltage : 1|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ BMS_cellOverVoltage : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BMS_chargerFault : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_CANTransmitFault : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_CANInitFault : 13|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_prechargeTimeout : 14|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_prechargeTempFault : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_internalCellCommsFault : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_BMSUnderTemp : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_BMSOverTemp : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_cellUnderTemp : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_cellOverTemp : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_cellMismatch : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_cellUnderVoltage : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_cellOverVoltage : 7|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 256 BMS_accuInfo100Hz: 8 PRBMS
  SG_ BMS_packVoltage : 7|16@0+ (0.1,0) [0|6553.5] "V" Vector__XXX
