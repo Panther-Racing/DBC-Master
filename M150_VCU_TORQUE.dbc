@@ -48,6 +48,9 @@ VAL_TABLE_ ReadyToDriveStateEnumeration 3 "Ready" 2 "Alarm Sounding" 1 "Not Read
 VAL_TABLE_ ReadyToDriveFaultEnumeration 5 "Throttle Pedal Engaged" 4 "Brakes Disengaged" 3 "Tractive System Inactive" 2 "No Faults" 1 "Brake Sensor Configuration Error" 0 "Unknown Fault" ;
 
 
+BO_ 0 New_Message_10: 8 Vector__XXX
+ SG_ New_Signal_133 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
 BO_ 1610 VCU_vehicleInfo1Hz: 2 Vector__XXX
  SG_ VCU_vehicleInfo1HzMux M : 0|8@1- (1,0) [0|0] "" Vector__XXX
  SG_ VCU_torqueMapMaximum m0 : 8|8@1- (1,0) [0|0] "" Vector__XXX
@@ -135,7 +138,8 @@ BO_ 1608 VCU_warning10Hz: 8 VCU
 BO_ 1280 PDM_pdmCurrentTotal: 8 PDM
  SG_ VCU_pdmTotalCurrent : 7|8@0- (1,0) [0|100] "Amps"  D153
 
-BO_ 1606 VCU_vehicleState10Hz: 8 VCU
+BO_ 1606 VCU_vehicleState10Hz: 7 VCU
+ SG_ vcu_regenState m2 : 47|4@0+ (1,0) [0|2] "" Vector__XXX
  SG_ VCU_vehicleState10HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
  SG_ VCU_tsalState m1 : 39|8@0+ (1,0) [0|9] ""  D153
  SG_ VCU_throttlePedalPlausCheckState m1 : 23|8@0+ (1,-3) [-3|9] ""  D153
