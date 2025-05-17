@@ -143,7 +143,7 @@ BO_ 1606 VCU_vehicleState10Hz: 7 VCU
  SG_ VCU_vehicleState10HzMux M : 7|8@0+ (1,0) [0|255] ""  D153
  SG_ VCU_tsalState m1 : 39|8@0+ (1,0) [0|9] ""  D153
  SG_ VCU_throttlePedalPlausCheckState m1 : 23|8@0+ (1,-3) [-3|9] ""  D153
- SG_ VCU_throttleMapAimSwitch m0 : 23|8@0+ (1,-1) [-1|9] ""  D153
+ SG_ VCU_throttleMapAimSwitch m0 : 23|8@0+ (1,-2) [-1|9] ""  D153
  SG_ VCU_readyToDriveState m1 : 55|8@0+ (1,-1) [-1|9] ""  D153
  SG_ VCU_readyToDriveFault m1 : 31|8@0+ (1,-2) [-2|9] ""  D153
  SG_ VCU_mcDiagCANTimeout m2 : 39|8@0+ (1,0) [0|255] "ms"  D153
