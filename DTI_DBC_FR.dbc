@@ -1,0 +1,283 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: HV500_commands HV500_controller
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ NewSignal_0005 : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1026 HV500_ERPM_DUTY_VOLTAGE: 8 HV500_controller
+ SG_ Actual_ERPM : 7|32@0- (1,0) [-120000|120000] "ERPM"  HV500_commands
+ SG_ Actual_Duty : 39|16@0- (0.1,0) [-100|100] "%"  HV500_commands
+ SG_ Actual_InputVoltage : 55|16@0- (1,0) [0|1000] "V"  HV500_commands
+
+BO_ 1058 HV500_AC_DC_current: 8 HV500_controller
+ SG_ Actual_ACCurrent : 7|16@0- (0.1,0) [-850|850] "Apk"  HV500_commands
+ SG_ Actual_DCCurrent : 23|16@0- (0.1,0) [-850|850] "A"  HV500_commands
+
+BO_ 1090 HV500_Temperatures: 8 HV500_controller
+ SG_ Actual_TempController : 7|16@0- (0.1,0) [-55|200] "C"  HV500_commands
+ SG_ Actual_TempMotor : 23|16@0- (0.1,0) [-55|200] "C"  HV500_commands
+ SG_ Actual_FaultCode : 39|8@0+ (1,0) [0|255] ""  HV500_commands
+
+BO_ 1122 HV500_FOC: 8 HV500_controller
+ SG_ Actual_FOC_id : 7|32@0- (0.01,0) [-850|850] "Apk"  HV500_commands
+ SG_ Actual_FOC_iq : 39|32@0- (0.01,0) [-850|850] "Apk"  HV500_commands
+
+BO_ 1154 HV500_MISC: 8 HV500_controller
+ SG_ Actual_Throttle : 7|8@0- (1,0) [0|100] "%"  HV500_commands
+ SG_ Actual_Brake : 15|8@0- (1,0) [0|100] "%"  HV500_commands
+ SG_ Digital_input_1 : 16|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Digital_input_2 : 17|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Digital_input_3 : 18|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Digital_input_4 : 19|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Digital_output_1 : 20|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Digital_output_2 : 21|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Digital_output_3 : 22|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Digital_output_4 : 23|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Drive_enable : 31|8@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Capacitor_temp_limit : 32|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ DC_current_limit : 33|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Drive_enable_limit : 34|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ IGBT_accel_limit : 35|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ IGBT_temp_limit : 36|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Input_voltage_limit : 37|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Motor_accel_limit : 38|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Motor_temp_limit : 39|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ RPM_min_limit : 40|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ RPM_max_limit : 41|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ Power_limit : 42|1@0+ (1,0) [0|1] ""  HV500_commands
+ SG_ CAN_map_version : 63|8@0+ (0.1,0) [0|255] "Version"  HV500_commands
+
+BO_ 386 HV500_SetDriveEnable: 2 HV500_commands
+ SG_ CMD_DriveEnable : 7|1@0+ (1,0) [0|1] ""  HV500_controller
+
+BO_ 34 HV500_SetAcCurrent: 8 HV500_commands
+ SG_ CMD_TargetAcCurrent : 7|16@0- (0.1,0) [-850|850] "A"  HV500_controller
+
+BO_ 66 HV500_SetBrakeCurrent: 8 HV500_commands
+ SG_ CMD_TargetBrakeCurrent : 7|16@0- (0.1,0) [0|850] "A"  HV500_controller
+
+BO_ 98 HV500_SetERPM: 4 HV500_commands
+ SG_ CMD_TargetSpeed : 7|32@0- (1,0) [-100000|100000] "ERPM"  HV500_controller
+
+BO_ 130 HV500_SetPosition: 2 HV500_commands
+ SG_ CMD_TargetPosition : 7|16@0- (0.1,0) [0|359] "degree"  HV500_controller
+
+BO_ 162 HV500_SetRelCurrent: 2 HV500_commands
+ SG_ CMD_TargetRelativeCurrent : 7|16@0- (0.1,0) [-100|100] "%"  HV500_controller
+
+BO_ 194 HV500_SetRelBrakeCurrent: 2 HV500_commands
+ SG_ CMD_TargeRelativeBrakeCurrent : 7|16@0- (0.1,0) [0|100] "%"  HV500_controller
+
+BO_ 258 HV500_SetMaxAcCurrent: 2 HV500_commands
+ SG_ CMD_MaxAcCurrent : 7|16@0- (0.1,0) [0|850] "A"  HV500_controller
+
+BO_ 290 HV500_SetMaxAcBrakeCurrent: 2 HV500_commands
+ SG_ CMD_MaxAcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  HV500_controller
+
+BO_ 322 HV500_SetMaxDcCurrent: 2 HV500_commands
+ SG_ CMD_MaxDcCurrent : 7|16@0- (0.1,0) [0|850] "A"  HV500_controller
+
+BO_ 354 HV500_SetMaxDcBrakeCurrent: 2 HV500_commands
+ SG_ CMD_MaxDcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  HV500_controller
+
+BO_ 226 HV500_SetDigOutput: 8 HV500_commands
+ SG_ CMD_SetDigOutput1 : 0|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ CMD_SetDigOutput2 : 1|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ CMD_SetDigOutput3 : 2|1@0+ (1,0) [0|1] "#" Vector__XXX
+ SG_ CMD_SetDigOutput4 : 3|1@0+ (1,0) [0|1] "#" Vector__XXX
+
+BO_ 994 HV500_TargetIq: 8 HV500_controller
+ SG_ ControlMode : 7|8@0+ (1,0) [0|7] "#" Vector__XXX
+ SG_ TargetIq : 15|16@0- (0.1,0) [-850|850] "Apk" Vector__XXX
+ SG_ MotorPosition : 31|16@0+ (0.1,0) [0|359] "degree" Vector__XXX
+ SG_ isMotorStill : 47|8@0+ (1,0) [0|1] "#" Vector__XXX
+
+BO_ 1186 HV500_MinMaxAcCurrent: 8 HV500_controller
+ SG_ MaxAcCurrent : 7|16@0- (0.1,0) [0|850] "Apk" Vector__XXX
+ SG_ AvailableMaxAcCurrent : 23|16@0- (0.1,0) [0|850] "Apk" Vector__XXX
+ SG_ MinAcCurrent : 39|16@0- (0.1,0) [-850|0] "Apk" Vector__XXX
+ SG_ AvailableMinAcCurrent : 55|16@0- (0.1,0) [-850|0] "Apk" Vector__XXX
+
+BO_ 1218 HV500_MinMaxDcCurrent: 8 HV500_controller
+ SG_ MaxDcCurrent : 7|16@0- (0.1,0) [0|850] "Adc" Vector__XXX
+ SG_ AvailableMaxDcCurrent : 23|16@0- (0.1,0) [0|850] "Adc" Vector__XXX
+ SG_ MinDcCurrent : 39|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
+ SG_ AvailableMinDcCurrent : 55|16@0- (0.1,0) [-850|0] "Adc" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ BO_ 1026 "Node ID: 4 (decimal)";
+CM_ SG_ 1026 Actual_ERPM "Electrical RPM
+Equation: ERPM = Motor RPM * number of the motor pole pairs.";
+CM_ SG_ 1026 Actual_Duty "The controller duty cycle. The sign of this value will represent whether the motor is running(positive) current or regenerating (negative) current.";
+CM_ SG_ 1026 Actual_InputVoltage "Input voltage is the DC voltage.";
+CM_ BO_ 1058 "Node ID: 4 (decimal)";
+CM_ SG_ 1058 Actual_ACCurrent "The motor current. The sign of this value represents whether the motor is running(positive) current or regenerating (negative) current.";
+CM_ SG_ 1058 Actual_DCCurrent "DC Current: Current on DC side. The sign of this value represents whether the motor is running(positive) current or regenerating (negative) current.";
+CM_ BO_ 1090 "Node ID: 4 (decimal)";
+CM_ SG_ 1090 Actual_TempController "Temperature of the inverter semiconductors.";
+CM_ SG_ 1090 Actual_TempMotor "Temperature of the motor measured by the inverter.";
+CM_ SG_ 1090 Actual_FaultCode "Fault codes.";
+CM_ BO_ 1122 "Node ID: 4 (decimal)";
+CM_ SG_ 1122 Actual_FOC_id "FOC algorithm component Id.";
+CM_ SG_ 1122 Actual_FOC_iq "FOC algorithm component Iq";
+CM_ BO_ 1154 "Node ID: 4 (decimal)";
+CM_ SG_ 1154 Actual_Throttle "Throttle signal derived from analog inputs or CAN2.";
+CM_ SG_ 1154 Actual_Brake "Brake signal derived from analog inputs or CAN2.";
+CM_ SG_ 1154 CAN_map_version "Indicates the CAN map version. For ex: 23 -> 2,3 (V2,3)";
+CM_ BO_ 386 "Node ID: 4 (decimal)";
+CM_ BO_ 34 "Node ID: 4 (decimal)";
+CM_ SG_ 34 CMD_TargetAcCurrent "Min/Max AC current depends on configuration!";
+CM_ BO_ 66 "Node ID: 4 (decimal)";
+CM_ SG_ 66 CMD_TargetBrakeCurrent "Max AC brake current depends on configuration!";
+CM_ BO_ 98 "Node ID: 4 (decimal)";
+CM_ BO_ 130 "Node ID: 4 (decimal)";
+CM_ BO_ 162 "Node ID: 4 (decimal)";
+CM_ BO_ 194 "Node ID: 4 (decimal)";
+CM_ BO_ 258 "Node ID: 4 (decimal)";
+CM_ BO_ 290 "Node ID: 4 (decimal)";
+CM_ SG_ 290 CMD_MaxAcBrakeCurrent "Minimum AC current value depends on inverter configuration!";
+CM_ BO_ 322 "Node ID: 4 (decimal)";
+CM_ BO_ 354 "Node ID: 4 (decimal)";
+CM_ SG_ 354 CMD_MaxDcBrakeCurrent "Minimum DC current value depends on inverter configuration!";
+CM_ BO_ 226 "Node ID: 4 (decimal)";
+CM_ SG_ 226 CMD_SetDigOutput1 "0: OFF
+1: ON";
+CM_ SG_ 226 CMD_SetDigOutput2 "0: OFF
+1: ON";
+CM_ SG_ 226 CMD_SetDigOutput3 "0: OFF
+1: ON";
+CM_ SG_ 226 CMD_SetDigOutput4 "0: OFF
+1: ON";
+CM_ BO_ 994 "Node ID: 4 (decimal)";
+CM_ SG_ 994 ControlMode "1: CONTROL_MODE_SPEED
+2: CONTROL_MODE_CURRENT
+3: CONTROL_MODE_CURRENT_BRAKE
+4: CONTROL_MODE_POS
+7: CONTROL_MODE_NONE
+0, 5, 6: NOT USED
+";
+CM_ SG_ 994 TargetIq "The value represent how much Iq current the inverter is targeted to reach. This value excludes limits. For ex. if the target Iq is 50 A and temperature limit is hit, the values keep 50 A in any case, not including the deration of the temp. limit. This is useful in multi-inverter configuration to let know the secondary inverter the target Iq. ";
+CM_ SG_ 994 MotorPosition "Motor position expressed in degrees.";
+CM_ SG_ 994 isMotorStill "Represents if the motor in still position or not. 1: still, 0: rotating";
+CM_ BO_ 1186 "Node ID: 4 (decimal)";
+CM_ SG_ 1186 MaxAcCurrent "Max AC current configured with the DTI CAN tool.";
+CM_ SG_ 1186 AvailableMaxAcCurrent "Available max AC current. This value affected by the limitation functions (igbt temp, motortemp etc.) Defines how much current available from the configured one.";
+CM_ SG_ 1186 MinAcCurrent "Min AC current configured with the DTI CAN tool.";
+CM_ SG_ 1186 AvailableMinAcCurrent "Available min AC current. This value affected by the limitation functions (igbt temp, motortemp etc.) Defines how much current available from the configured one.";
+CM_ BO_ 1218 "Node ID: 4 (decimal)";
+CM_ SG_ 1218 MaxDcCurrent "Max DC current configured with the DTI CAN tool.";
+CM_ SG_ 1218 AvailableMaxDcCurrent "Available max DC current. This value affected by the limitation functions (igbt temp, motortemp etc.) Defines how much current available from the configured one.";
+CM_ SG_ 1218 MinDcCurrent "Min DC current configured with the DTI CAN tool.";
+CM_ SG_ 1218 AvailableMinDcCurrent "Available min DC current. This value affected by the limitation functions (igbt temp, motortemp etc.) Defines how much current available from the configured one.";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","IfActive";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgTimeoutTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_  "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_  "isj1939dbc" INT 0 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgTimeoutTime" 0;
+BA_DEF_DEF_  "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_  "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_  "isj1939dbc" 0;
+BA_ "GenMsgCycleTime" BO_ 1026 100;
+BA_ "GenMsgSendType" BO_ 1026 0;
+BA_ "GenMsgCycleTime" BO_ 1058 100;
+BA_ "GenMsgSendType" BO_ 1058 0;
+BA_ "GenMsgCycleTime" BO_ 1090 100;
+BA_ "GenMsgSendType" BO_ 1090 0;
+BA_ "GenMsgCycleTime" BO_ 1122 100;
+BA_ "GenMsgSendType" BO_ 1122 0;
+BA_ "GenMsgCycleTime" BO_ 1154 100;
+BA_ "GenMsgSendType" BO_ 1154 0;
+BA_ "GenMsgCycleTime" BO_ 386 100;
+BA_ "GenMsgSendType" BO_ 386 0;
+BA_ "GenMsgCycleTime" BO_ 34 100;
+BA_ "GenMsgSendType" BO_ 34 0;
+BA_ "GenMsgCycleTime" BO_ 66 100;
+BA_ "GenMsgSendType" BO_ 66 0;
+BA_ "GenMsgCycleTime" BO_ 98 100;
+BA_ "GenMsgSendType" BO_ 98 0;
+BA_ "GenMsgCycleTime" BO_ 130 100;
+BA_ "GenMsgSendType" BO_ 130 0;
+BA_ "GenMsgCycleTime" BO_ 162 100;
+BA_ "GenMsgSendType" BO_ 162 0;
+BA_ "GenMsgCycleTime" BO_ 194 100;
+BA_ "GenMsgSendType" BO_ 194 0;
+BA_ "GenMsgCycleTime" BO_ 258 100;
+BA_ "GenMsgSendType" BO_ 258 0;
+BA_ "GenMsgCycleTime" BO_ 290 100;
+BA_ "GenMsgSendType" BO_ 290 0;
+BA_ "GenMsgCycleTime" BO_ 322 100;
+BA_ "GenMsgSendType" BO_ 322 0;
+BA_ "GenMsgCycleTime" BO_ 354 100;
+BA_ "GenMsgSendType" BO_ 354 0;
+BA_ "GenMsgSendType" BO_ 226 0;
+BA_ "GenMsgCycleTime" BO_ 226 100;
+BA_ "GenMsgCycleTime" BO_ 994 100;
+BA_ "GenMsgSendType" BO_ 994 0;
+BA_ "GenMsgSendType" BO_ 1186 0;
+BA_ "GenMsgCycleTime" BO_ 1186 100;
+BA_ "GenMsgSendType" BO_ 1218 0;
+BA_ "GenMsgCycleTime" BO_ 1218 100;
+VAL_ 1090 Actual_FaultCode 0 "NO_FAULT" 1 "OVERVOLTAGE" 2 "UNDERVOLTAGE" 3 "DRIVE_ERROR" 4 "ABSOLUTE_MAX_OVERCURRENT" 5 "CONTROLLER_OVERTEMPERATURE" 6 "MOTOR_OVERTEMPERATURE" 7 "SENSOR_WIRE_FAULT" 8 "SENSOR_GENERAL_FAULT" 9 "CAN_COMMAND_ERROR" 10 "ANALOG_INPUT_ERROR" ;
+VAL_ 1154 Digital_input_1 0 "Input_1_disabled" 1 "Input_1_enabled" ;
+VAL_ 1154 Digital_input_2 0 "Input_2_enabled" 1 "Input_2_enabled" ;
+VAL_ 1154 Digital_input_3 0 "Input_3_disabled" 1 "Input_3_enabled" ;
+VAL_ 1154 Digital_input_4 0 "Input_4_disabled" 1 "Input_4_enabled" ;
+VAL_ 1154 Digital_output_1 0 "Output_1_disabled" 1 "Output_1_enabled" ;
+VAL_ 1154 Digital_output_2 0 "Output_2_disabled" 1 "Output_2_enabled" ;
+VAL_ 1154 Digital_output_3 0 "Output_3_disabled" 1 "Output_3_enabled" ;
+VAL_ 1154 Digital_output_4 0 "Output_4_disabled" 1 "Output_4_enabled" ;
+VAL_ 1154 Drive_enable 0 "Drive_disabled" 1 "Drive_enabled" ;
+VAL_ 1154 Capacitor_temp_limit 2 "CAN timeout" 0 "Capacitor_temperature_limit_inactive" 1 "Capacitor_temperature_limit_active" ;
+VAL_ 1154 DC_current_limit 2 "CAN timeout" 1 "DC_current_limit_active" 0 "DC_current_limit_inactive" ;
+VAL_ 1154 Drive_enable_limit 2 "CAN timeout" 0 "Drive_enable_limit_inactive" 1 "Drive_enable_limit_active" ;
+VAL_ 1154 IGBT_accel_limit 2 "CAN timeout" 0 "limit inactive" 1 "limit active" ;
+VAL_ 1154 IGBT_temp_limit 2 "CAN timeout" 0 "IGBT_temperature_limit_inactive" 1 "IGBT_temperature_limit_active" ;
+VAL_ 1154 Input_voltage_limit 2 "CAN timeout" 0 "Input_voltage_limit_inactive" 1 "Input_voltage_limit_active" ;
+VAL_ 1154 Motor_accel_limit 2 "CAN timeout" 0 "Motor_acceleration_temperature_limit_inactive" 1 "Motor_acceleration_temperature_limit_active" ;
+VAL_ 1154 Motor_temp_limit 2 "CAN timeout" 0 "Motor_temperature_limit_inactive" 1 "Motor_temperature_limit_active" ;
+VAL_ 1154 RPM_min_limit 2 "CAN timeout" 0 "RPM_minimum_limit_inactive" 1 "RPM_minimum_limit_active" ;
+VAL_ 1154 RPM_max_limit 2 "CAN timeout" 0 "RPM_maximum_limit_inactive" 1 "RPM_maximum_limit_active" ;
+VAL_ 1154 Power_limit 2 "CAN timeout" 0 "Power_limit_inactive" 1 "Power_limit_active" ;
+VAL_ 386 CMD_DriveEnable 1 "Drive enabled" 0 "Drive disabled" ;
+
