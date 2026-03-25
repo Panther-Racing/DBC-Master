@@ -82,8 +82,8 @@ BO_ 577 HV500_MISC: 8 HV500_controller
  SG_ Power_limit : 42|1@0+ (1,0) [0|1] ""  HV500_commands
  SG_ CAN_map_version : 63|8@0+ (0.1,0) [0|255] "Version"  HV500_commands
 
-BO_ 193 HV500_SetDriveEnable: 2 HV500_commands
- SG_ CMD_DriveEnable : 7|1@0+ (1,0) [0|1] ""  HV500_controller
+BO_ 2147486721 HV500_SetDriveEnable: 8 HV500_commands
+ SG_ CMD_DriveEnable : 0|1@0+ (1,0) [0|1] ""  HV500_controller
 
 BO_ 17 HV500_SetAcCurrent: 8 HV500_commands
  SG_ CMD_TargetAcCurrent : 65535|16@0- (0.1,0) [-850|850] "A"  HV500_controller
@@ -91,7 +91,7 @@ BO_ 17 HV500_SetAcCurrent: 8 HV500_commands
 BO_ 33 HV500_SetBrakeCurrent: 8 HV500_commands
  SG_ CMD_TargetBrakeCurrent : 7|16@0- (0.1,0) [0|850] "A"  HV500_controller
 
-BO_ 49 HV500_SetERPM: 4 HV500_commands
+BO_ 2147484417 HV500_SetERPM: 4 HV500_commands
  SG_ CMD_TargetSpeed : 7|32@0- (1,0) [-100000|100000] "ERPM"  HV500_controller
 
 BO_ 65 HV500_SetPosition: 2 HV500_commands
@@ -161,12 +161,12 @@ CM_ BO_ 577 "Node ID: 4 (decimal)";
 CM_ SG_ 577 Actual_Throttle "Throttle signal derived from analog inputs or CAN2.";
 CM_ SG_ 577 Actual_Brake "Brake signal derived from analog inputs or CAN2.";
 CM_ SG_ 577 CAN_map_version "Indicates the CAN map version. For ex: 23 -> 2,3 (V2,3)";
-CM_ BO_ 193 "Node ID: 4 (decimal)";
+CM_ BO_ 2147486721 "Node ID: 4 (decimal)";
 CM_ BO_ 17 "Node ID: 4 (decimal)";
 CM_ SG_ 17 CMD_TargetAcCurrent "Min/Max AC current depends on configuration!";
 CM_ BO_ 33 "Node ID: 4 (decimal)";
 CM_ SG_ 33 CMD_TargetBrakeCurrent "Max AC brake current depends on configuration!";
-CM_ BO_ 49 "Node ID: 4 (decimal)";
+CM_ BO_ 2147484417 "Node ID: 4 (decimal)";
 CM_ BO_ 65 "Node ID: 4 (decimal)";
 CM_ BO_ 81 "Node ID: 4 (decimal)";
 CM_ BO_ 97 "Node ID: 4 (decimal)";
@@ -218,46 +218,46 @@ BA_DEF_DEF_  "GenMsgTimeoutTime" 0;
 BA_DEF_DEF_  "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_  "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_  "isj1939dbc" 0;
-BA_ "GenMsgCycleTime" BO_ 513 100;
 BA_ "GenMsgSendType" BO_ 513 0;
-BA_ "GenMsgCycleTime" BO_ 529 100;
+BA_ "GenMsgCycleTime" BO_ 513 100;
 BA_ "GenMsgSendType" BO_ 529 0;
-BA_ "GenMsgCycleTime" BO_ 545 100;
+BA_ "GenMsgCycleTime" BO_ 529 100;
 BA_ "GenMsgSendType" BO_ 545 0;
-BA_ "GenMsgCycleTime" BO_ 561 100;
+BA_ "GenMsgCycleTime" BO_ 545 100;
 BA_ "GenMsgSendType" BO_ 561 0;
-BA_ "GenMsgCycleTime" BO_ 577 100;
+BA_ "GenMsgCycleTime" BO_ 561 100;
 BA_ "GenMsgSendType" BO_ 577 0;
-BA_ "GenMsgCycleTime" BO_ 193 100;
-BA_ "GenMsgSendType" BO_ 193 0;
-BA_ "GenMsgCycleTime" BO_ 17 100;
+BA_ "GenMsgCycleTime" BO_ 577 100;
+BA_ "GenMsgSendType" BO_ 2147486721 0;
+BA_ "GenMsgCycleTime" BO_ 2147486721 100;
 BA_ "GenMsgSendType" BO_ 17 0;
-BA_ "GenMsgCycleTime" BO_ 33 100;
+BA_ "GenMsgCycleTime" BO_ 17 100;
 BA_ "GenMsgSendType" BO_ 33 0;
-BA_ "GenMsgCycleTime" BO_ 49 100;
-BA_ "GenMsgSendType" BO_ 49 0;
-BA_ "GenMsgCycleTime" BO_ 65 100;
+BA_ "GenMsgCycleTime" BO_ 33 100;
+BA_ "GenMsgSendType" BO_ 2147484417 0;
+BA_ "GenMsgCycleTime" BO_ 2147484417 100;
 BA_ "GenMsgSendType" BO_ 65 0;
-BA_ "GenMsgCycleTime" BO_ 81 100;
+BA_ "GenMsgCycleTime" BO_ 65 100;
 BA_ "GenMsgSendType" BO_ 81 0;
-BA_ "GenMsgCycleTime" BO_ 97 100;
+BA_ "GenMsgCycleTime" BO_ 81 100;
 BA_ "GenMsgSendType" BO_ 97 0;
-BA_ "GenMsgCycleTime" BO_ 129 100;
+BA_ "GenMsgCycleTime" BO_ 97 100;
 BA_ "GenMsgSendType" BO_ 129 0;
-BA_ "GenMsgCycleTime" BO_ 145 100;
+BA_ "GenMsgCycleTime" BO_ 129 100;
 BA_ "GenMsgSendType" BO_ 145 0;
-BA_ "GenMsgCycleTime" BO_ 161 100;
+BA_ "GenMsgCycleTime" BO_ 145 100;
 BA_ "GenMsgSendType" BO_ 161 0;
-BA_ "GenMsgCycleTime" BO_ 177 100;
+BA_ "GenMsgCycleTime" BO_ 161 100;
 BA_ "GenMsgSendType" BO_ 177 0;
-BA_ "GenMsgSendType" BO_ 113 0;
+BA_ "GenMsgCycleTime" BO_ 177 100;
 BA_ "GenMsgCycleTime" BO_ 113 100;
-BA_ "GenMsgCycleTime" BO_ 497 100;
+BA_ "GenMsgSendType" BO_ 113 0;
 BA_ "GenMsgSendType" BO_ 497 0;
-BA_ "GenMsgSendType" BO_ 593 0;
+BA_ "GenMsgCycleTime" BO_ 497 100;
 BA_ "GenMsgCycleTime" BO_ 593 100;
-BA_ "GenMsgSendType" BO_ 609 0;
+BA_ "GenMsgSendType" BO_ 593 0;
 BA_ "GenMsgCycleTime" BO_ 609 100;
+BA_ "GenMsgSendType" BO_ 609 0;
 VAL_ 545 Actual_FaultCode 0 "NO_FAULT" 1 "OVERVOLTAGE" 2 "UNDERVOLTAGE" 3 "DRIVE_ERROR" 4 "ABSOLUTE_MAX_OVERCURRENT" 5 "CONTROLLER_OVERTEMPERATURE" 6 "MOTOR_OVERTEMPERATURE" 7 "SENSOR_WIRE_FAULT" 8 "SENSOR_GENERAL_FAULT" 9 "CAN_COMMAND_ERROR" 10 "ANALOG_INPUT_ERROR" ;
 VAL_ 577 Digital_input_1 0 "Input_1_disabled" 1 "Input_1_enabled" ;
 VAL_ 577 Digital_input_2 0 "Input_2_enabled" 1 "Input_2_enabled" ;
@@ -279,5 +279,5 @@ VAL_ 577 Motor_temp_limit 2 "CAN timeout" 0 "Motor_temperature_limit_inactive" 1
 VAL_ 577 RPM_min_limit 2 "CAN timeout" 0 "RPM_minimum_limit_inactive" 1 "RPM_minimum_limit_active" ;
 VAL_ 577 RPM_max_limit 2 "CAN timeout" 0 "RPM_maximum_limit_inactive" 1 "RPM_maximum_limit_active" ;
 VAL_ 577 Power_limit 2 "CAN timeout" 0 "Power_limit_inactive" 1 "Power_limit_active" ;
-VAL_ 193 CMD_DriveEnable 1 "Drive enabled" 0 "Drive disabled" ;
+VAL_ 2147486721 CMD_DriveEnable 1 "Drive enabled" 0 "Drive disabled" ;
 
