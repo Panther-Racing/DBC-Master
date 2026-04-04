@@ -1,0 +1,77 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: D153 VCU
+
+
+BO_ 5 D153_vdInfo: 4 D153
+ SG_ D153_yaw : 31|8@0+ (1,0) [0|255] ""  VCU
+ SG_ D153_tcLong : 23|8@0+ (1,0) [0|255] ""  VCU
+ SG_ D153_tcLat : 15|8@0+ (1,0) [0|255] ""  VCU
+ SG_ D153_regenBias : 7|8@0+ (1,0) [0|255] ""  VCU
+
+BO_ 4 VCU_vehicleInfo: 8 VCU
+ SG_ VCU_vehicleSpeed : 63|8@0+ (1,0) [0|255] ""  D153
+ SG_ VCU_throttlePercent : 55|8@0+ (1,0) [0|255] ""  D153
+ SG_ VCU_rtdStatus : 31|2@0+ (1,0) [0|3] ""  D153
+ SG_ VCU_rearBrakePress : 39|16@0+ (1,0) [0|65535] ""  D153
+ SG_ VCU_lvBatteryVoltage : 23|8@0+ (1,0) [0|255] ""  D153
+ SG_ VCU_frontBrakePress : 7|16@0+ (1,0) [0|65535] ""  D153
+
+BO_ 3 VCU_tireTemps: 8 VCU
+ SG_ VCU_tireTempRR : 55|16@0- (1,0) [0|0] ""  D153
+ SG_ VCU_tireTempRL : 39|16@0- (1,0) [0|0] ""  D153
+ SG_ VCU_tireTempFR : 23|16@0- (1,0) [0|0] ""  D153
+ SG_ VCU_tireTempFL : 7|16@0- (1,0) [-32768|32767] ""  D153
+
+BO_ 2 VCU_hvInfo: 7 VCU
+ SG_ VCU_soc : 55|8@0+ (1,0) [0|255] ""  D153
+ SG_ VCU_packVoltage : 39|16@0+ (1,0) [0|65535] ""  D153
+ SG_ VCU_lowCellTemp : 31|8@0- (1,0) [-128|127] ""  D153
+ SG_ VCU_highCellTemp : 23|8@0- (1,0) [-128|127] ""  D153
+ SG_ VCU_dcBusVoltage : 7|16@0+ (1,0) [0|65535] ""  D153
+
+BO_ 1 VCU_ergo: 3 VCU
+ SG_ VCU_modeDialPos : 23|8@0+ (1,0) [0|255] ""  D153
+ SG_ VCU_dashScreenAimSwitch : 15|8@0+ (1,0) [0|255] ""  D153
+ SG_ VCU_dashBoxAimSwitch : 7|8@0+ (1,0) [0|255] ""  D153
+
+
+
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "BusType" "CAN";
+
