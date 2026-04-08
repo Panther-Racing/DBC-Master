@@ -36,6 +36,10 @@ BS_:
 BU_: D153 VCU
 
 
+BO_ 6 VCU_torqueInfo: 4 VCU
+ SG_ VCU_throttlePedalTorqueMap : 23|16@0+ (1,0) [0|65535] ""  D153
+ SG_ VCU_throttleMapAimSwitch : 7|8@0+ (1,0) [0|255] ""  D153
+
 BO_ 5 D153_vdInfo: 4 D153
  SG_ D153_yaw : 31|8@0+ (1,0) [0|255] ""  VCU
  SG_ D153_tcLong : 23|8@0+ (1,0) [0|255] ""  VCU
@@ -45,7 +49,7 @@ BO_ 5 D153_vdInfo: 4 D153
 BO_ 4 VCU_vehicleInfo: 8 VCU
  SG_ VCU_vehicleSpeed : 63|8@0+ (1,0) [0|255] ""  D153
  SG_ VCU_throttlePercent : 55|8@0+ (1,0) [0|255] ""  D153
- SG_ VCU_rtdStatus : 31|2@0+ (1,0) [0|3] ""  D153
+ SG_ VCU_rtdStatus : 31|4@0- (1,0) [-8|7] ""  D153
  SG_ VCU_rearBrakePress : 39|16@0+ (1,0) [0|65535] ""  D153
  SG_ VCU_lvBatteryVoltage : 23|8@0+ (1,0) [0|255] ""  D153
  SG_ VCU_frontBrakePress : 7|16@0+ (1,0) [0|65535] ""  D153
