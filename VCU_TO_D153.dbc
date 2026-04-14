@@ -50,8 +50,8 @@ BO_ 6 VCU_torqueInfo: 4 VCU
 BO_ 5 VCU_vdInfo: 8 VCU
  SG_ VCU_lc : 55|16@0- (1,0) [-32768|32767] ""  D153
  SG_ VCU_tc : 39|16@0- (1,0) [-32768|32767] ""  D153
- SG_ D153_yaw : 31|8@0+ (1,0) [0|255] ""  VCU
- SG_ D153_regenBias : 7|8@0+ (1,0) [0|255] ""  VCU
+ SG_ VCU_yaw : 31|8@0+ (1,0) [0|255] ""  VCU
+ SG_ VCU_regenBias : 7|8@0+ (1,0) [0|255] ""  VCU
 
 BO_ 4 VCU_vehicleInfo: 8 VCU
  SG_ VCU_vehicleSpeed : 63|8@0+ (1,0) [0|255] ""  D153
