@@ -37,7 +37,7 @@ BU_: VCU Load_Cell
 
 
 BO_ 1592 Load_Cell_Data: 2 Load_Cell
- SG_ Output_Voltage : 7|16@0- (1,0) [-32768|32767] ""  VCU
+ SG_ Output_Voltage : 7|16@0- (10,0) [-32768|32767] ""  VCU
 
 
 
